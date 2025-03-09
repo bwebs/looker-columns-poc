@@ -5,6 +5,8 @@ Iterate through each field in each explore in each model. Generate a sql stateme
 ## Usage
 
 ```
+mv .env.example .env
+# edit .env with your looker api info
 uv run --env-file .env src/main.py
 ```
 
@@ -12,15 +14,15 @@ The output currently is a txt list (see ends.example.txt) of fields explores and
 
 ## TODO
 
-TODO - map sqlglot dialects to looker dialects?
-TODO - how to handle filters and parameters
-TODO - how to handle PDTS? Can looker generate sql without PDTS?
-TODO - how to handle SELECT \*
-TODO - ensure FQTN e.g. order_items in sql_table_name, but its FQTN IS `looker-private-demo.ecomm.order_items?
-TODO - ensure FQCN e.g. order_items.sale_price, but its FQCN IS `looker-private-demo.ecomm.order_items.sale_price?
-TODO - how are joins represented in the graph? And their join keys?
-TODO - how are intermediate fields represented in the graph? For example, if I select one lookml field, but Looker selects two (this can happen with drill fields or links)
-TODO - how would we parse custom fields to get their lineage?
+- map sqlglot dialects to looker dialects?
+- how to handle filters and parameters
+- how to handle PDTS? Can looker generate sql without PDTS?
+- how to handle SELECT \*
+- ensure FQTN e.g. order_items in sql_table_name, but its FQTN IS `looker-private-demo.ecomm.order_items?
+- ensure FQCN e.g. order_items.sale_price, but its FQCN IS `looker-private-demo.ecomm.order_items.sale_price?
+- how are joins represented in the graph? And their join keys?
+- how are intermediate fields represented in the graph? For example, if I select one lookml field, but Looker selects two (this can happen with drill fields or links)
+- how would we parse custom fields to get their lineage?
 
 ## Better approaches for tools like dataplex
 
