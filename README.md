@@ -16,7 +16,7 @@ The output currently is a txt list (see ends.example.txt) of fields explores and
 
 - map sqlglot dialects to looker dialects?
 - how to handle filters and parameters
-- how to handle PDTS? Can looker generate sql without PDTS?
+- how to handle PDTS? Can looker generate sql without PDTS? Will special processing be needed?
 - how to handle SELECT \*
 - ensure FQTN e.g. order_items in sql_table_name, but its FQTN IS `looker-private-demo.ecomm.order_items?
 - ensure FQCN e.g. order_items.sale_price, but its FQCN IS `looker-private-demo.ecomm.order_items.sale_price?
